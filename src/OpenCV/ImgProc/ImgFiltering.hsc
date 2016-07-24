@@ -276,7 +276,7 @@ boxBlurImg = exceptError $
 <http://docs.opencv.org/3.0-last-rst/modules/imgproc/doc/filtering.html#blur OpenCV Sphinx doc>
 -}
 blur
-  :: (depth `In` '[Word8, Word16, Float], ToSize2i size2i)
+  :: (depth `In` '[Word8, Word16, Float, Double], ToSize2i size2i)
   => size2i -- ^ Blurring kernel size.
   -> Mat shape ('S channels) ('S depth)
   -> CvExcept (Mat shape ('S channels) ('S depth))
